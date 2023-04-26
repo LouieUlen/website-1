@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@400;500;700&display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>Document</title>
 </head>
 
@@ -103,14 +103,46 @@
           <h5 class="request__h5">Реализуем самые смелые решения в России!</h5>
         </div>
         <div class="request__flex-right">
-          <button class="request_button">
+          <a class="request_button modal-trigger" href="#modal1">
             <img class="request_icon" src="img/request.svg" alt="icon">
             Ваш запрос
-          </button>
+          </a>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- модальное окно с помощью materializq -->
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4 class="modal-content-h4">Ваши данные</h4>
+      <form action="" class="modal-content__form">
+        <table>
+          <tr>
+            <td><label class="modal__label" for="name">Введите имя:</label></td>
+            <td><input class="modal__input" id="name" type="text" placeholder="Имя"></td>
+          </tr>
+          <tr>
+            <td><label class="modal__label" for="mail">Введите email:</label></td>
+            <td><input class="modal__input" id="mail" type="email" placeholder="Почта"></td>
+          </tr>
+          <tr>
+            <td><label class="modal__label" for="number">Введите телефон:</label></td>
+            <td><input class="modal__input" id="number" type="text" placeholder="Телефон"></td>
+          </tr>
+          <tr>
+            <td><label class="modal__label" for="text">Введите сообщение:</label></td>
+            <td><textarea class="modal__input" id="text" name="" cols="50" rows="7" placeholder="Ваше сообщение"></textarea></td>
+          </tr>
+        </table>
+        <div class="submit__model">
+        <button type="submit" class="modal__submit-btn">Отправить</button>
+      </div>
+      </form>
+    </div>
+  </div>
+          
 
   <section class="services">
     <div class="container">
@@ -147,28 +179,28 @@
   <section class="gallery">
     <div class="gallery__grid">
       <div class="gallery__grid-item">
-        <img class="gallery__img" src="img/image_gallery.png" alt="img">
+        <img class="gallery__img materialboxed" src="img/image_gallery.png" alt="img">
       </div>
       <div class="gallery__grid-item">
-        <img class="gallery__img" src="img/image_gallery.png" alt="img">
+        <img class="gallery__img materialboxed" src="img/image_gallery.png" alt="img">
       </div>
       <div class="gallery__grid-item">
-        <img class="gallery__img" src="img/image_gallery.png" alt="img">
+        <img class="gallery__img materialboxed" src="img/image_gallery.png" alt="img">
       </div>
       <div class="gallery__grid-item">
-        <img class="gallery__img" src="img/image_gallery.png" alt="img">
+        <img class="gallery__img materialboxed" src="img/image_gallery.png" alt="img">
       </div>
       <div class="gallery__grid-item">
-        <img class="gallery__img" src="img/image_gallery.png" alt="img">
+        <img class="gallery__img materialboxed" src="img/image_gallery.png" alt="img">
       </div>
       <div class="gallery__grid-item">
-        <img class="gallery__img" src="img/image_gallery.png" alt="img">
+        <img class="gallery__img materialboxed" src="img/image_gallery.png" alt="img">
       </div>
       <div class="gallery__grid-item">
-        <img class="gallery__img" src="img/image_gallery.png" alt="img">
+        <img class="gallery__img materialboxed" src="img/image_gallery.png" alt="img">
       </div>
       <div class="gallery__grid-item">
-        <img class="gallery__img" src="img/image_gallery.png" alt="img">
+        <img class="gallery__img materialboxed" src="img/image_gallery.png" alt="img">
       </div>
     </div>
   </section>
@@ -280,10 +312,10 @@
           <h5 class="request__h5">Оставьте заявку и мы свяжемся с вами!</h5>
         </div>
         <div class="request__flex-right">
-          <button class="request_button">
+          <a class="request_button modal-trigger" href="#modal1">
             <img class="request_icon" src="img/request.svg" alt="icon">
             Ваш запрос
-          </button>
+          </a>
         </div>
       </div>
     </div>
